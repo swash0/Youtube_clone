@@ -1,0 +1,91 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Remove text decoration from links */
+a {
+  text-decoration: none;
+  color: #af124e;
+}
+
+/* Hide scrollbar */
+::-webkit-scrollbar {
+  width: 0;
+  height: 5px;
+}
+
+/* Style scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background-color: #8a2895;
+  border-radius: 10px;
+  height: 20px;
+}
+
+/* Style category button on hover */
+.category-btn:hover {
+  background-color: #333;
+  color: #134d37;
+}
+
+/* Style text inside category button on hover */
+.category-btn:hover span {
+  color: #9e1818;
+}
+
+/* Style search bar */
+.search-bar {
+  border: none;
+  outline: none;
+  width: 350px;
+  background-color: #ddd4dc;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+/* Style category button */
+.category-btn {
+  font-weight: bold;
+  text-transform: capitalize;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  background-color: #355567;
+  outline: none;
+  border: none;
+  padding: 10px 20px;
+  margin: 10px 0;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(80, 14, 63, 0.3);
+}
+
+/* Media queries */
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto;
+  }
+
+  .react-player {
+    height: 45vh;
+  }
+
+  .search-bar {
+    width: 200px;
+  }
+}
